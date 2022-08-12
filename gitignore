@@ -1,0 +1,54 @@
+#environment
+env/
+sagemaker-user/
+.env
+**.local/
+
+#poetry
+.poetry.lock
+
+# virtualenv
+.venv
+venv/
+ENV/
+
+# don't save data or joblibs, except where specified
+*.csv
+*.csv.metadata
+*.joblib
+*.joblib.metadata
+*.npy
+*.npy.metadata
+data/*
+
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/*.csv
+!models/.gitkeep
+
+#Jupyter
+**/.ipynb_checkpoints
+**/__pycache__/
+**/.jupyter/
+
+# don't save output
+output/
+*.pdf
+*.html
+*.jpg
+*.png
+*.gif
+*.pyc
+
+# VPN
+*.ovpn
+
+# Visual Studio
+*.vscode/
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+!*.[Cc]ache/
+
+#docker
+docker-compose.yml

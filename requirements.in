@@ -1,0 +1,30 @@
+# minimal set of dependencies
+black                   #code style
+flake8                  #code style
+pandasticsearch[pandas] #load data from elasticsearch
+elasticsearch==7.13     #load data from elasticsearch
+argparse                #take arguments for data loading and processing
+joblib                  #load/save models
+seaborn                 #plotting
+matplotlib              #plotting
+pandas                  #data wrangling    
+scikit-learn==0.24.0    #modeling, if making our own image switch to scikit-learn==1.0.2 
+statsmodels==0.12.2     #modeling
+scipy==1.6.3            #signal processing/modeling
+csaps                   #signal processing
+jupyterlab
+jupyter_contrib_nbextensions #reports
+mlflow[extras]          #logging model performance
+xgboost                 #modeling
+sagemaker==2.59.8
+snowflake-connector-python==2.6.0 #load data from SNF
+s3fs                    # load/save data in s3
+hyperopt                #Bayesian hyperparameter grid search
+opencv-contrib-python   #skin tone analysis
+scikit-image==0.19.0    #skin tone analysis
+tqdm                    #progress bar: Bayesian grid search
+
+# lstm
+# tensorflow==2.6.0       # neural networks e.g LSTM
+# keras-tuner             # neural network hyperparameter selection
+# scikit-learn==1.0.2
